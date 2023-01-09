@@ -54,5 +54,5 @@ def main():
         st.error("Choose an image!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
