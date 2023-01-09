@@ -40,15 +40,19 @@ def print_predictions(pred):
         st.write(cl[1], cl[2])
 
 
-model = load_model()
+def main():
+    model = load_model()
+
+    img = load_image()
+    result = st.button("Recognize Image")
+    if result:
+        num = preprocess_image(img)
+        pred = model.predict(num)
+        st.write("Recognition results:")
+        print_predictions(pred)
+    else:
+        st.error("Choose an image!")
 
 
-img = load_image()
-result = st.button("Recognize Image")
-if result:
-    num = preprocess_image(img)
-    pred = model.predict(num)
-    st.write("Recognition results:")
-    print_predictions(pred)
-else:
-    st.error("Choose an image!")
+if __name__ == '__main__':
+    main()
