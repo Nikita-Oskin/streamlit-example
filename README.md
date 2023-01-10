@@ -4,7 +4,7 @@
 
 # How to use ?
 
-1. Use the [streamlit application](https://tensorflow-imageclassification.streamlit.app/).
+1. Use the [streamlit application](https://on-tensorflow-imageclassification.streamlit.app/).
 
 ![step 1](image/Screen1.PNG)
 
